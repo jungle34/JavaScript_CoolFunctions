@@ -13,12 +13,10 @@ function getCardTargets(_element, _class){
 	let value = $(_element).val()
 	targetElement  = $(card).find(`#${target}`)[0];
 
-	return_data = {
+	return {
 		card: card,
 		state: state,
 		value: value,
 		target: targetElement		
-	}
-
-	return return_data;
+	}	
 }
